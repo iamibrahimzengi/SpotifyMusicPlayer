@@ -5,7 +5,7 @@ import {setRepeatMode} from 'react-native-track-player/lib/src/trackPlayer';
 export async function SetPlayer() {
   let isSetup = false;
   try {
-    await TrackPlayer.getActiveTrackIndex();
+    await TrackPlayer.getActiveTrack();
     isSetup = true;
   } catch (error) {
     await TrackPlayer.setupPlayer();
